@@ -1,0 +1,79 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition:
+    color 0.3s ease-in-out,
+    background 0.3s ease-in-out;
+}
+.btn-primary {
+  padding: 14px 24px;
+  background: $primary-color;
+  color: $color-white;
+  border-radius: 12px;
+  @include media('screen', '>=desktop') {
+    padding: 18px 30px;
+  }
+  &:hover {
+    background: $secondary-color;
+  }
+}
+.btn-property {
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  line-height: 1.5;
+  &:hover {
+    background: $secondary-color;
+    color: $color-white;
+  }
+}
+.btn-outline {
+  border: 1px solid $primary-color;
+  &:hover {
+    border: 1px solid $secondary-color;
+  }
+}
+.btn-active {
+  background: $primary-color;
+  color: $color-white;
+}
+
+.btn-blog,
+.btn-register {
+  padding: 12px 30px;
+  background: $color-white;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  border-radius: 30px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: $font-weight-medium;
+  &:hover {
+    background: #b3b3b3;
+    color: $primary-color;
+  }
+}
+
+.btn-add-list {
+  padding: 15px 26px;
+  border-radius: 50px;
+  display: inline-flex;
+  gap: 10px;
+  background: $primary-color;
+  color: $color-white;
+  &:hover {
+    background: $secondary-color;
+    color: $color-white;
+  }
+}
+
+.head-foot-link {
+  &:hover {
+    opacity: 0.8;
+    color: $primary-color;
+  }
+}

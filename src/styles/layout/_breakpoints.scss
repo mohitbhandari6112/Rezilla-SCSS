@@ -1,0 +1,27 @@
+// $breakpoints: (
+//   'xs-phone': 320px,
+//   'phone': 520px,
+//   'tablet': 768px,
+//   'desktop': 1024px,
+//
+//   'laptop': 1480px,
+//   'widescreen': 1920px,
+// );
+
+// @mixin tablet {
+//   @media (min-width: map-get($breakpoints,'tablet')) {
+//     @content;
+//   }
+// }
+
+// @mixin desktop {
+//   @media (min-width: map-get($breakpoints,'desktop')) {
+//     @content;
+//   }
+// }
+
+// @mixin default-media-query($breakpoint: 0) {
+//   @media (min-width: $breakpoint) {
+//     @content;
+//   }
+// }

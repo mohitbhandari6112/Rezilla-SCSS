@@ -1,0 +1,35 @@
+@mixin make-linear-circle($width, $height, $rotate, $opacity: 1) {
+  width: $width;
+  height: $height;
+  transform: rotate($rotate);
+  border-radius: 50%;
+  background-image: linear-gradient(rgba(67, 97, 238, 1), rgba(67, 97, 238, 0));
+  opacity: $opacity;
+}
+
+@mixin make-linear-circle-white($width, $height, $rotate, $opacity: 1) {
+  width: $width;
+  height: $height;
+  transform: rotate($rotate);
+  border-radius: 50%;
+  background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 0));
+  opacity: $opacity;
+}
+@mixin section-top-description($color) {
+  font-weight: $font-weight-medium;
+  font-size: 16px;
+  letter-spacing: 2.4px;
+  line-height: 1.5;
+  color: $color;
+  text-transform: uppercase;
+  @include media('screen', '>=tablet') {
+    font-size: 19px;
+    line-height: 29px;
+    letter-spacing: 3.2px;
+  }
+}
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

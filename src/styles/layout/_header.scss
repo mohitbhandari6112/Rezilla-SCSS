@@ -1,0 +1,124 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site
+// -----------------------------------------------------------------------------
+.top-banner {
+  background: $primary-color;
+  padding: 9px 0;
+  color: $color-white;
+  font-size: 13px;
+  line-height: 22px;
+  display: none;
+  @include media('screen', '>=tablet') {
+    display: block;
+  }
+}
+
+.banner-items {
+  @include list-reset;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  a,
+  .first-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: $color-white;
+  }
+  a {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  .second-list {
+    margin-left: auto;
+  }
+}
+.nav-container {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include media('screen', '>=tablet') {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: $font-weight-medium;
+    padding-bottom: 23px;
+    padding-top: 12px;
+  }
+  .head-pr-lg {
+    @include media('screen', '>=biglaptop') {
+      padding-right: 86px;
+    }
+  }
+}
+
+.nav-links {
+  @include list-reset;
+  display: none;
+  align-items: center;
+  @include media('screen', '>=desktop') {
+    display: flex;
+  }
+
+  .active {
+    background: rgb(67, 97, 238, 0.3);
+  }
+  a {
+    color: $text-color-2;
+    padding: 8px 16px;
+    border-radius: 30px;
+    &:hover {
+      background: rgb(67, 97, 238, 0.3);
+    }
+  }
+}
+.menu-btns {
+  padding-top: 6px;
+  padding-right: 3px;
+  @include media('screen', '>=desktop') {
+    display: none;
+  }
+}
+.burger-menu {
+  fill: $default-text-color;
+  &:hover {
+    fill: $primary-color;
+  }
+}
+.burger-close {
+  display: none;
+}
+.login-register-btns {
+  @include list-reset;
+  display: none;
+  align-items: center;
+  gap: 16px;
+  @include media('screen', '>=desktop') {
+    display: flex;
+  }
+  .login-register {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    a {
+      color: $text-color-2;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+    img {
+      padding-top: 8px;
+    }
+  }
+}
+
+.login-wrap {
+  font-size: 0;
+  a {
+    font-size: 16px;
+  }
+  span {
+    font-size: 16px;
+  }
+}

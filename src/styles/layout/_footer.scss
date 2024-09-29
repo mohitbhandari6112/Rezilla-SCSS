@@ -1,0 +1,247 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site
+// -----------------------------------------------------------------------------
+.footer {
+  margin-top: 100px;
+  @include media('screen', '>=desktop') {
+    margin-top: 180px;
+  }
+  background: rgb(67, 97, 238, 0.1);
+}
+.footer-logo {
+  justify-content: center;
+}
+.footer-row {
+  padding: 61px 0px 44px;
+  @include media('screen', '>=phone') {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  @include media('screen', '>=desktop') {
+    padding-top: 82px;
+    padding-bottom: 52px;
+  }
+}
+.logo-col {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: $font-weight-medium;
+  text-align: center;
+  margin-bottom: 30px;
+  @include media('screen', '>=phone') {
+    text-align: start;
+  }
+
+  address {
+    font-style: normal;
+    color: $text-color-3;
+    max-width: 224px;
+    margin: 18px auto;
+    @include media('screen', '>=phone') {
+      margin-left: 0;
+      margin-right: 0;
+      color: $text-color-2;
+    }
+    @include media('screen', '>=tablet') {
+      margin-bottom: 32px;
+    }
+    @include media('screen', '>=desktop') {
+      margin-bottom: 40px;
+    }
+  }
+}
+.phone-number,
+.email-address {
+  margin-bottom: 8px;
+  @include media('screen', '>=tablet') {
+    margin-bottom: 23px;
+  }
+  a {
+    color: $text-color-3;
+    @include media('screen', '>=phone') {
+      color: $text-color-2;
+    }
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.logo-col,
+.subscribe-newsletter-col {
+  @include media('screen', '>=phone') {
+    flex-grow: 1;
+  }
+}
+.quick-links-col,
+.discovery-col {
+  display: none;
+}
+.quick-links-col {
+  @include media('screen', '>=tablet') {
+    display: block;
+    flex-grow: 1;
+  }
+}
+.discovery-col {
+  @include media('screen', '>=desktop') {
+    display: block;
+    flex-grow: 1;
+  }
+}
+.foot-pr-lg-quick {
+  @include media('screen', '>=desktop') {
+    padding-right: 14px;
+  }
+}
+.pl-lg-news {
+  @include media('screen', '>=desktop') {
+    padding-left: 8px;
+  }
+}
+
+.foot-heading {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: $font-weight-medium;
+  color: $default-text-color;
+  @include media('screen', '>=tablet') {
+    font-size: 19px;
+    line-height: 29px;
+    padding-top: 8px;
+  }
+  @include media('screen', '>=desktop') {
+    padding-top: 11px;
+  }
+}
+.foot-links,
+.social-media-links {
+  @include list-reset;
+}
+.foot-links {
+  margin-top: 20px;
+  @include media('screen', '>=phone') {
+    margin-top: 24px;
+  }
+  li {
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+  }
+  a {
+    font-size: 16px;
+    line-height: 26px;
+    color: $text-color-2;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.subscribe-input {
+  position: relative;
+  margin: 12px 0 32px;
+  @include media('screen', '>=desktop') {
+    margin-bottom: 8px;
+  }
+  input[type='email'] {
+    padding: 24px 60px 24px 24px;
+    border: none;
+    background: $color-white;
+    border-radius: 30px;
+    box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.05);
+  }
+  .subscribe-svb-container {
+    background: $primary-color;
+    padding: 13px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    svg {
+      display: block;
+      fill: $color-white;
+    }
+    &:hover {
+      background: $secondary-color;
+    }
+  }
+}
+.social-media-heading {
+  margin-top: 24px;
+  margin-bottom: 30px;
+}
+.foot-heading {
+  max-width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  @include media('screen', '>=tablet') {
+    text-align: start;
+    margin: 0;
+  }
+}
+.social-media-links {
+  margin-top: 26px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  @include media('screen', '>=tablet') {
+    justify-content: flex-start;
+  }
+  @include media('screen', '>=desktop') {
+    margin-top: 24px;
+    gap: 20px;
+  }
+
+  svg {
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.4);
+    }
+  }
+}
+
+//scss footer-banner
+.footer-banner {
+  padding: 11px 0;
+  background: $default-text-color;
+  p {
+    color: $text-color-4;
+    margin-bottom: 0;
+    text-align: center;
+    a {
+      color: $text-color-4;
+      &:hover {
+        color: #ef4444;
+      }
+    }
+  }
+}
+.foot-banner-items {
+  @include media('screen', '>=desktop') {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+.foot-banner-links {
+  @include list-reset;
+  margin-left: auto;
+  // display: flex;
+  display: none;
+  gap: 40px;
+  @include media('screen', '>=desktop') {
+    display: flex;
+  }
+  a {
+    color: $text-color-4;
+    &:hover {
+      color: #ef4444;
+    }
+  }
+}

@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- page title -->
+    <title>Rezilla</title>
+    <link rel="icon" href="images/fab-icon/favicon.ico" sizes="any" />
+    <!-- include styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+    <!-- include jQuery library local file if cdn link doesn't work -->
+    <script>
+      window.jQuery || document.write('<script src="js/jquery-3.7.1.min.js" defer><\/script>');
+    </script>
+    <!-- include app js file  -->
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <a class="visually-hidden focusable" href="#main">Skip to Content</a>
+    <noscript>
+      <div>Javascript must be enabled for the correct page display</div>
+    </noscript>
+    <div class="wrapper">
+      <div class="container-l">
+        <div class="top-banner">
+          <div class="container-header">
+            <ul class="banner-items">
+              <li class="first-list">
+                <svg width="16" height="16" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 7.4C13 10.9346 7 17 7 17C7 17 1 10.9346 1 7.4C1 3.86538 3.68629 1 7 1C10.3137 1 13 3.86538 13 7.4Z" stroke="white" stroke-width="1.2" />
+                  <path
+                    d="M7 8.19998C7.41422 8.19998 7.75 7.84182 7.75 7.39998C7.75 6.95815 7.41422 6.59998 7 6.59998C6.58578 6.59998 6.25 6.95815 6.25 7.39998C6.25 7.84182 6.58578 8.19998 7 8.19998Z"
+                    fill="#2B2B2B"
+                    stroke="white"
+                    stroke-width="1.2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <span>Rezilla, 18 Grattan St, Brooklyn</span>
+              </li>
+              <li class="second-list">
+                <a href="tel:12062142298">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.5425 1.66261L15.5161 1.64609L12.1749 0L8.56855 4.8084L10.2277 7.02078C10.1781 7.85512 9.82426 8.6423 9.23324 9.23331C8.64223 9.82432 7.85504 10.1781 7.0207 10.2278L4.80836 8.56859L0 12.1748L1.6324 15.4881L1.64613 15.5161L1.66269 15.5425C1.7498 15.6829 1.87139 15.7986 2.01588 15.8787C2.16036 15.9587 2.32295 16.0005 2.48814 16H3.3503C5.01148 16 6.6564 15.6728 8.19114 15.0371C9.72587 14.4014 11.1204 13.4696 12.295 12.295C13.4696 11.1203 14.4014 9.72584 15.0371 8.1911C15.6728 6.65636 16 5.01144 16 3.35026V2.48807C16.0005 2.32287 15.9588 2.16029 15.8787 2.0158C15.7986 1.87131 15.6829 1.74972 15.5425 1.66261ZM14.7653 3.35026C14.7653 9.64451 9.64451 14.7653 3.3503 14.7653H2.65267L1.56047 12.548L4.8086 10.1119L6.61698 11.4682H6.82276C8.05445 11.4668 9.23529 10.9769 10.1062 10.106C10.9772 9.23502 11.4671 8.05418 11.4684 6.82249V6.61671L10.1122 4.80836L12.548 1.56043L14.7653 2.65283V3.35026Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span>+1 206-214-2298</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#114;&#101;&#122;&#105;&#108;&#108;&#097;&#046;&#099;&#111;&#109;">
+                  <svg width="16" height="16" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 4.20001L9 7.00001L13 4.20001" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M1 10.6V2.6C1 1.71634 1.71634 1 2.6 1H15.4C16.2837 1 17 1.71634 17 2.6V10.6C17 11.4837 16.2837 12.2 15.4 12.2H2.6C1.71634 12.2 1 11.4837 1 10.6Z"
+                      stroke="white"
+                      stroke-width="1.2"
+                    />
+                  </svg>
+                  <span>&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#114;&#101;&#122;&#105;&#108;&#108;&#097;&#046;&#099;&#111;&#109;</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container-l semi-circle-container">
+        <header class="header">
+          <div class="container-header">
+            <nav class="nav-container">
+              <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Listings</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blogs</a></li>
+              </ul>
+              <a href="#home" class="head-foot-link head-pr-lg">
+                <div class="header-logo">
+                  <div class="header-svg">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M23.715 9.16499L12.465 0.164989C12.332 0.0584866 12.1667 0.000457764 11.9963 0.000457764C11.8258 0.000457764 11.6605 0.0584866 11.5275 0.164989L0.2775 9.16499C0.156135 9.26236 0.0680565 9.39506 0.025468 9.54471C-0.0171205 9.69436 -0.0121105 9.85356 0.0398037 10.0002C0.091718 10.1469 0.187966 10.2738 0.315214 10.3634C0.442461 10.4529 0.594407 10.5006 0.75 10.5H2.25V23.25C2.25 23.4489 2.32902 23.6397 2.46967 23.7803C2.61032 23.921 2.80109 24 3 24H18V22.5H15V15.75C15 15.5511 14.921 15.3603 14.7803 15.2197C14.6397 15.079 14.4489 15 14.25 15H9.75C9.55109 15 9.36032 15.079 9.21967 15.2197C9.07902 15.3603 9 15.5511 9 15.75V22.5H3.75V10.5H16.5V8.99999H2.8875L12 1.70999L21.1125 8.99999H21C20.8011 8.99999 20.6103 9.07901 20.4697 9.21966C20.329 9.36031 20.25 9.55108 20.25 9.74999V14.25H21.75V10.5H23.25C23.405 10.4991 23.5558 10.4502 23.6819 10.3601C23.8079 10.27 23.903 10.143 23.9539 9.9967C24.0049 9.85037 24.0093 9.69184 23.9665 9.54291C23.9237 9.39398 23.8359 9.26195 23.715 9.16499ZM10.5 16.5H13.5V22.5H10.5V16.5Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M18.75 19.9425L17.7825 18.975L16.725 20.0325L18.225 21.5325C18.3655 21.6722 18.5556 21.7506 18.7537 21.7506C18.9519 21.7506 19.142 21.6722 19.2825 21.5325L23.7825 17.0325L22.725 15.975L18.75 19.9425Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <strong class="company-name">Rezilla</strong>
+                </div>
+              </a>
+
+              <ul class="login-register-btns">
+                <li class="login-register">
+                  <img src="images/login-register-icon.svg" alt="icon login register" />
+                  <span class="login-wrap">
+                    <a href="#Login">Login</a>
+                    <span>/</span>
+                    <a href="#register">Register</a>
+                  </span>
+                </li>
+                <li>
+                  <a href="#ad" class="btn-add-list">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M23.715 9.16499L12.465 0.164989C12.332 0.0584866 12.1667 0.000457764 11.9963 0.000457764C11.8258 0.000457764 11.6605 0.0584866 11.5275 0.164989L0.2775 9.16499C0.156135 9.26236 0.0680565 9.39506 0.025468 9.54471C-0.0171205 9.69436 -0.0121105 9.85356 0.0398037 10.0002C0.091718 10.1469 0.187966 10.2738 0.315214 10.3634C0.442461 10.4529 0.594407 10.5006 0.75 10.5H2.25V23.25C2.25 23.4489 2.32902 23.6397 2.46967 23.7803C2.61032 23.921 2.80109 24 3 24H18V22.5H15V15.75C15 15.5511 14.921 15.3603 14.7803 15.2197C14.6397 15.079 14.4489 15 14.25 15H9.75C9.55109 15 9.36032 15.079 9.21967 15.2197C9.07902 15.3603 9 15.5511 9 15.75V22.5H3.75V10.5H16.5V8.99999H2.8875L12 1.70999L21.1125 8.99999H21C20.8011 8.99999 20.6103 9.07901 20.4697 9.21966C20.329 9.36031 20.25 9.55108 20.25 9.74999V14.25H21.75V10.5H23.25C23.405 10.4991 23.5558 10.4502 23.6819 10.3601C23.8079 10.27 23.903 10.143 23.9539 9.9967C24.0049 9.85037 24.0093 9.69184 23.9665 9.54291C23.9237 9.39398 23.8359 9.26195 23.715 9.16499ZM10.5 16.5H13.5V22.5H10.5V16.5Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M18.75 19.9425L17.7825 18.975L16.725 20.0325L18.225 21.5325C18.3655 21.6722 18.5556 21.7506 18.7537 21.7506C18.9519 21.7506 19.142 21.6722 19.2825 21.5325L23.7825 17.0325L22.725 15.975L18.75 19.9425Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <span>Add Listing</span>
+                  </a>
+                </li>
+              </ul>
+
+              <button class="menu-btns" aria-label="burger menu icons btns">
+                <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="burger-menu">
+                  <path d="M24 0H0V2.18182H24V0Z" />
+                  <path d="M24 9.81818H0V12H24V9.81818Z" />
+                  <path d="M24 19.6364H0V21.8182H24V19.6364Z" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 30 30" class="burger-close">
+                  <path
+                    d="M 7 4 C 6.744125 4 6.4879687 4.0974687 6.2929688 4.2929688 L 4.2929688 6.2929688 C 3.9019687 6.6839688 3.9019687 7.3170313 4.2929688 7.7070312 L 11.585938 15 L 4.2929688 22.292969 C 3.9019687 22.683969 3.9019687 23.317031 4.2929688 23.707031 L 6.2929688 25.707031 C 6.6839688 26.098031 7.3170313 26.098031 7.7070312 25.707031 L 15 18.414062 L 22.292969 25.707031 C 22.682969 26.098031 23.317031 26.098031 23.707031 25.707031 L 25.707031 23.707031 C 26.098031 23.316031 26.098031 22.682969 25.707031 22.292969 L 18.414062 15 L 25.707031 7.7070312 C 26.098031 7.3170312 26.098031 6.6829688 25.707031 6.2929688 L 23.707031 4.2929688 C 23.316031 3.9019687 22.682969 3.9019687 22.292969 4.2929688 L 15 11.585938 L 7.7070312 4.2929688 C 7.5115312 4.0974687 7.255875 4 7 4 z"
+                  ></path>
+                </svg>
+              </button>
+            </nav>
+          </div>
+        </header>
+        <section class="section-hero">
+          <div class="heading-desc-wrapper">
+            <strong class="section-description">Real Estate </strong>
+            <div class="hero-desc">
+              <h1 class="h1">Find a perfect home you love..!</h1>
+              <p>Etiam eget elementum elit. Aenean dignissim dapibus vestibulum. Integer a dolor eu sapien sodales vulputate ac in purus.</p>
+            </div>
+          </div>
+          <div class="hero-circle" aria-label="circle in the hero section for layouting"></div>
+          <div class="hero-form-container">
+            <div class="tab-btns">
+              <button class="btn-tab tab-active">For Sale</button>
+              <button class="btn-tab">For Rent</button>
+            </div>
+            <form action="#" class="hero-form">
+              <div class="group-wrapper">
+                <div class="form-group">
+                  <input type="text" name="location" placeholder="New York, San Francisco, etc" aria-label="location" />
+                </div>
+                <div class="form-group">
+                  <select name="property-type" class="property-dropdown">
+                    <option value="">Select property type</option>
+                    <option value="house">house</option>
+                    <option value="land">land</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select name="property-rooms" class="property-room-dropdown">
+                    <option value="">Select rooms</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <a href="#ad" class="adv-search">
+                <img src="images/icon-advanced-search.svg" alt="icon of advaned search" />
+                <span>Advance Search</span>
+              </a>
+              <button type="submit" class="btn-primary hero-form-btn"><i class="fa-solid fa-magnifying-glass"></i> <span>Search</span></button>
+            </form>
+          </div>
+        </section>
+      </div>
+
+      <main class="main" id="main">
+        <div class="section-logos">
+          <div class="container-m">
+            <p>Trusted by 100+ Companies across the globe!</p>
+            <div class="row-logos">
+              <figure class="logo-col">
+                <img src="images/brand-logos/logo-1.jpg" alt="logo of google" />
+              </figure>
+              <figure class="logo-col">
+                <img src="images/brand-logos/logo-2.jpg" alt="logo of amazon" />
+              </figure>
+              <figure class="logo-col">
+                <img src="images/brand-logos/logo-3.jpg" alt="logo of logitech" />
+              </figure>
+              <figure class="logo-col">
+                <img src="images/brand-logos/logo-4.jpg" alt="logo of sportify" />
+              </figure>
+              <figure class="logo-col">
+                <img src="images/brand-logos/logo-5.jpg" alt="logo of samsung" />
+              </figure>
+              <figure class="logo-col last-logo-col">
+                <img src="images/brand-logos/logo-6.jpg" alt="logo of netflix" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <section class="section-intro">
+          <div class="container-m">
+            <strong class="section-description">WHO ARE WE</strong>
+            <div class="row-intro">
+              <div class="col-intro">
+                <h2 class="h2">Assisting individuals in locating the appropriate real estate.</h2>
+                <p>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus. Nulla convallis ipsum molestie nibh malesuada, ac malesuada leo volutpat.</p>
+                <div class="intro-boxes">
+                  <div class="intro-box">
+                    <img src="images/intro-images/intro-icon-1.svg" alt="icon of intro box" class="intro-box-svg-1" />
+                    <div class="intro-box-content">
+                      <strong class="intro-box-heading">Donec porttitor euismod</strong>
+                      <p>Nullam a lacinia ipsum, nec dignissim purus. Nulla</p>
+                    </div>
+                  </div>
+                  <div class="intro-box">
+                    <img src="images/intro-images/intro-icon-2.svg" alt="icon of intro box" class="intro-box-svg-2" />
+                    <div class="intro-box-content">
+                      <strong class="intro-box-heading">Donec porttitor euismod</strong>
+                      <p>Nullam a lacinia ipsum, nec dignissim purus. Nulla</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-image-grid">
+                <div class="image-grid-row">
+                  <div class="image-grid-col1">
+                    <figure class="grid-img-1">
+                      <img src="images/intro-images/grid-img-1.jpg" alt="image of pool" />
+                    </figure>
+                    <figure class="circular-image">
+                      <img src="images/intro-images/circular-img.png" alt="image of brand" />
+                    </figure>
+                  </div>
+                  <div class="image-grid-col2">
+                    <figure class="grid-img-2">
+                      <img src="images/intro-images/grid-img-2.jpg" alt="image of bedroom" />
+                    </figure>
+                    <figure class="grid-img-3">
+                      <img src="images/intro-images/grid-img-3.jpg" alt="image of living room" />
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-property-list">
+          <div class="container-m">
+            <div class="property-btn-row">
+              <div class="property-heading">
+                <strong class="section-description">CHECKOUT OUR NEW</strong>
+                <h2 class="h2">Latest Listed Properties</h2>
+                <p>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus.</p>
+              </div>
+              <div class="property-btns">
+                <button class="btn-property btn-outline">All</button>
+                <button class="btn-property btn-active">Sell</button>
+                <button class="btn-property btn-outline">Rent</button>
+              </div>
+            </div>
+            <div class="property-boxes-row">
+              <div class="property-box-col">
+                <div class="property-image">
+                  <figure>
+                    <img src="images/property-images/property-img-1.jpg" alt="image of property 1" />
+                  </figure>
+
+                  <a href="#pop" class="property-tag popular-tag">
+                    <img src="images/popular-tag.svg" alt="icon of popular tag" />
+                    <span>Popular</span>
+                  </a>
+                </div>
+                <strong class="property-price"> &dollar; 5,970 </strong>
+                <strong class="property-name">Tranquil Haven in the Woods</strong>
+                <address class="property-address">103 Wright CourtBurien, WA 98168</address>
+                <div class="property-beds-bath">
+                  <div class="property-beds">
+                    <img src="images/icon-bed.svg" alt="icon of property bed" />
+                    <span> 4 Beds</span>
+                  </div>
+                  <div class="property-baths">
+                    <img src="images/icon-bath.svg" alt="icon of property bath" />
+                    <span> 3 Bath</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="property-box-col">
+                <div class="property-image">
+                  <figure>
+                    <img src="images/property-images/property-img-2.jpg" alt="image of property 2" />
+                  </figure>
+                  <a href="#new" class="property-tag new-listing-tag">
+                    <img src="images/new-list-tag.svg" alt="icon of new listing tag" />
+                    <span>New Listing</span>
+                  </a>
+                </div>
+                <strong class="property-price"> &dollar; 1,970 </strong>
+                <strong class="property-name">Serene Retreat by the Lake</strong>
+                <address class="property-address">1964 Jehovah Drive, VA 22408</address>
+                <div class="property-beds-bath">
+                  <div class="property-beds">
+                    <img src="images/icon-bed.svg" alt="icon of property bed" />
+                    <span> 3 Beds</span>
+                  </div>
+                  <div class="property-baths">
+                    <img src="images/icon-bath.svg" alt="icon of property bath" />
+                    <span> 2 Bath</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="property-box-col">
+                <div class="property-image">
+                  <figure>
+                    <img src="images/property-images/property-img-3.jpg" alt="image of property 2" />
+                  </figure>
+                  <a href="#dis" class="property-tag discounted-price-tag">
+                    <img src="images/discount-price-tag.svg" alt="icon of discount tag" />
+                    <span>Discounted Price</span>
+                  </a>
+                </div>
+                <strong class="property-price"> &dollar; 3,450 </strong>
+                <strong class="property-name">Charming Cottage in the Meadow</strong>
+                <address class="property-address">1508 Centennial Farm RoadHarlan, 51537</address>
+                <div class="property-beds-bath">
+                  <div class="property-beds">
+                    <img src="images/icon-bed.svg" alt="icon of property bed" />
+                    <span> 4 Beds</span>
+                  </div>
+                  <div class="property-baths">
+                    <img src="images/icon-bath.svg" alt="icon of property bath" />
+                    <span> 4 Bath</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="property-box-col property-last-col">
+                <div class="property-image">
+                  <figure>
+                    <img src="images/property-images/property-img-4.jpg" alt="image of property 1" />
+                  </figure>
+                  <div class="property-tag popular-tag">
+                    <img src="images/popular-tag.svg" alt="icon of popular tag" />
+                    <span>Popular</span>
+                  </div>
+                </div>
+                <strong class="property-price"> &dollar; 2,389</strong>
+                <strong class="property-name">Grand Estate on the Hilltop</strong>
+                <address class="property-address">103 Wright CourtBurien, WA 98168</address>
+                <div class="property-beds-bath">
+                  <div class="property-beds">
+                    <img src="images/icon-bed.svg" alt="icon of property bed" />
+                    <span> 4 Beds</span>
+                  </div>
+                  <div class="property-baths">
+                    <img src="images/icon-bath.svg" alt="icon of property bath" />
+                    <span> 3 Bath</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn-holder">
+              <a href="#viewmore" class="btn-property btn-outline">View more properties</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-services">
+          <div class="container-m">
+            <strong class="section-description">OUR SERVICES</strong>
+            <h3 class="h2">Donec porttitor euismod dignissim</h3>
+            <div class="services-row">
+              <div class="service-col">
+                <a href="#srv">
+                  <div class="service-wrapper">
+                    <div class="service-img">
+                      <img src="images/icon-property-search.svg" alt="search icon" />
+                    </div>
+                    <strong class="service-heading">Buy a New Home</strong>
+                    <p>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="service-col">
+                <a href="#srv">
+                  <div class="service-wrapper">
+                    <div class="service-img">
+                      <img src="images/icon-property-home.svg" alt="search icon" />
+                    </div>
+                    <strong class="service-heading">Sell a House</strong>
+                    <p>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="service-col">
+                <a href="#srv">
+                  <div class="service-wrapper last-service-wrapper">
+                    <div class="service-img">
+                      <img src="images/icon-bed-white.svg" alt="search icon" />
+                    </div>
+                    <strong class="service-heading">Rent a House</strong>
+                    <p>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="circle-services" aria-label="circle for layout design"></div>
+          </div>
+        </section>
+
+        <section class="section-neighbour-properties">
+          <div class="container-m">
+            <strong class="section-description">AREAS ACROSS THE TOWN</strong>
+            <h3 class="h2">Neighborhood Properties</h3>
+            <div class="row-property-images">
+              <div class="property-img-col property-col-1">
+                <div class="property-img-wrapper">
+                  <figure>
+                    <img src="images/neighbour-property-images/property-1.jpg" alt="neighbour property 1" />
+                  </figure>
+                  <div class="neighbour-property-desc">
+                    <div class="neighbour-property-code h2">216</div>
+                    <div class="neighbour-property-city">New York City, NY</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="property-img-col property-col-2">
+                <div class="property-img-wrapper">
+                  <figure>
+                    <img src="images/neighbour-property-images/property-2.jpg" alt="neighbour property 2" />
+                  </figure>
+                  <div class="neighbour-property-desc">
+                    <div class="neighbour-property-code h2">141</div>
+                    <div class="neighbour-property-city">Houston, TX</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="property-img-col property-col-3">
+                <div class="property-img-wrapper">
+                  <figure>
+                    <img src="images/neighbour-property-images/property-3.jpg" alt="neighbour property 3" />
+                  </figure>
+                  <div class="neighbour-property-desc">
+                    <div class="neighbour-property-code h2">212</div>
+                    <div class="neighbour-property-city">San Diego, CA</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="property-img-col property-col-4">
+                <div class="property-img-wrapper">
+                  <figure>
+                    <img src="images/neighbour-property-images/property-4.jpg" alt="neighbour property 4" />
+                  </figure>
+                  <div class="neighbour-property-desc">
+                    <div class="neighbour-property-code">183</div>
+                    <div class="neighbour-property-city">Philadelphia, PA</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="property-img-col property-col-5">
+                <div class="property-img-wrapper neighbour-last-wrapper">
+                  <figure class="last-neighbour-img-wrapper">
+                    <img src="images/neighbour-property-images/property-5.jpg" alt="neighbour property 4" />
+                  </figure>
+                  <div class="neighbour-property-desc">
+                    <div class="neighbour-property-code h2">112</div>
+                    <div class="neighbour-property-city">San Francisco, CA</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-team">
+          <div class="container-m">
+            <strong class="section-description">Introduce yourself to </strong>
+            <h3 class="h2">Our Team of Experts</h3>
+            <div class="row-wrapper">
+              <div class="teams-row">
+                <div class="team-col">
+                  <div class="team-wrapper">
+                    <figure>
+                      <img src="images/team-images/team-img-1.jpg" alt="image of team member" />
+                    </figure>
+                    <strong class="team-name">Brendon M</strong>
+                    <strong class="team-role">CEO & Founder</strong>
+                  </div>
+                </div>
+
+                <div class="team-col">
+                  <div class="team-wrapper">
+                    <figure>
+                      <img src="images/team-images/team-img-2.jpg" alt="image of team member" />
+                    </figure>
+                    <strong class="team-name">Jodi J. Appleby</strong>
+                    <strong class="team-role">Real State Developer</strong>
+                  </div>
+                </div>
+
+                <div class="team-col">
+                  <div class="team-wrapper">
+                    <figure>
+                      <img src="images/team-images/team-img-3.jpg" alt="image of team member" />
+                    </figure>
+                    <strong class="team-name">Justin S. Meza</strong>
+                    <strong class="team-role">Listing Agent</strong>
+                  </div>
+                </div>
+
+                <div class="team-col">
+                  <div class="team-wrapper">
+                    <figure>
+                      <img src="images/team-images/team-img-4.jpg" alt="image of team member" />
+                    </figure>
+                    <strong class="team-name">Susan T. Smith</strong>
+                    <strong class="team-role">Buyer's Agent</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-blogs">
+          <div class="container-m">
+            <strong class="section-description"> WHAT’S TRENDING </strong>
+            <h3 class="h2">Latest Blogs & Posts</h3>
+            <div class="blogs-row">
+              <div class="blog-col">
+                <div class="blog-wrapper">
+                  <div class="blog-img-date">
+                    <figure>
+                      <img src="images/blog-images/blog-img-1.jpg" alt="image of blog" />
+                    </figure>
+                    <div class="blog-date">
+                      <div class="date">28</div>
+                      <div class="day">Tue</div>
+                    </div>
+                  </div>
+                  <div class="blog-title">Top 10 Home Buying Mistakes to Avoid</div>
+                  <p>Etiam eget elementum elit. Aenean dignissim dapibus vestibulum</p>
+                  <div class="blog-arrow-btn-container">
+                    <a href="#next">
+                      <img src="images/blog-images/blog-arrow.svg" alt="arrow svg icon" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="blog-col">
+                <div class="blog-wrapper">
+                  <div class="blog-img-date">
+                    <figure>
+                      <img src="images/blog-images/blog-img-2.jpg" alt="image of blog" />
+                    </figure>
+                    <div class="blog-date">
+                      <div class="date">08</div>
+                      <div class="day">Mon</div>
+                    </div>
+                  </div>
+                  <div class="blog-title">How to Stage Your Home for a Quick Sale</div>
+                  <p>Nullam odio lacus, dictum quis pretium congue, vehicula venenatis nunc.</p>
+                  <div class="blog-arrow-btn-container">
+                    <a href="#next">
+                      <img src="images/blog-images/blog-arrow.svg" alt="arrow svg icon" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="blog-col">
+                <div class="blog-wrapper">
+                  <div class="blog-img-date">
+                    <figure>
+                      <img src="images/blog-images/blog-img-3.jpg" alt="image of blog" />
+                    </figure>
+                    <div class="blog-date">
+                      <div class="date">26</div>
+                      <div class="day">Wed</div>
+                    </div>
+                  </div>
+                  <div class="blog-title">5 Tips for First-Time Home Sellers</div>
+                  <p>In hac habitasse platea dictumst. Phasellus vel velit vel augue maximus.</p>
+                  <div class="blog-arrow-btn-container">
+                    <a href="#next">
+                      <img src="images/blog-images/blog-arrow.svg" alt="arrow svg icon" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="view-more-blog">
+              <a href="#more" class="btn-blog">View more blogs</a>
+            </div>
+            <div class="horizontal-bars" aria-label="bar-link btn related to slider">
+              <a href="#b" class="bar bar-active" aria-label="horizontal btn associated with blog"></a>
+              <a href="#b" class="bar" aria-label="horizontal btn associated with blog"></a>
+              <a href="#b" class="bar" aria-label="horizontal btn associated with blog"></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-testimonials">
+          <div class="container-m">
+            <div class="testimonials-row">
+              <div class="heading-content-testimonial">
+                <strong class="section-description">TESTIMONIALS</strong>
+                <h3 class="h2">Look What Our Customers Say!</h3>
+                <p>Fusce venenatis tellus a felis scelerisque, non pulvinar est pellentesque.</p>
+                <div class="testimonial-arr-btns">
+                  <a href="#ne" class="arrow-left-btn" aria-label="left arrow button of slider">
+                    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM21.7071 8.70711C22.0976 8.31658 22.0976 7.68342 21.7071 7.29289L15.3431 0.928932C14.9526 0.538408 14.3195 0.538408 13.9289 0.928932C13.5384 1.31946 13.5384 1.95262 13.9289 2.34315L19.5858 8L13.9289 13.6569C13.5384 14.0474 13.5384 14.6805 13.9289 15.0711C14.3195 15.4616 14.9526 15.4616 15.3431 15.0711L21.7071 8.70711ZM1 9H21V7H1V9Z"
+                      />
+                    </svg>
+                  </a>
+                  <a href="#ne" aria-label="right arrow button of slider">
+                    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM21.7071 8.70711C22.0976 8.31658 22.0976 7.68342 21.7071 7.29289L15.3431 0.928932C14.9526 0.538408 14.3195 0.538408 13.9289 0.928932C13.5384 1.31946 13.5384 1.95262 13.9289 2.34315L19.5858 8L13.9289 13.6569C13.5384 14.0474 13.5384 14.6805 13.9289 15.0711C14.3195 15.4616 14.9526 15.4616 15.3431 15.0711L21.7071 8.70711ZM1 9H21V7H1V9Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="testimonial-quote">
+                <div class="testimonial-svg-image">
+                  <img src="images/testimonial-images/icon-block-quote.svg" alt="icon of block quote" />
+                </div>
+                <p>
+                  I highly recommend Jodi J. Appleby. She was attentive to our needs and worked tirelessly to find us the perfect home. We couldn't be happier with our new place!
+                </p>
+                <div class="testimonial-foot">
+                  <div class="testimonial-foot-image">
+                    <img src="images/testimonial-images/testimonial-img.jpg" alt="icon of block quote" />
+                  </div>
+                  <div class="user-name-rating">
+                    <div class="user-name">Barbara D. Smith</div>
+                    <div class="rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star fa-last" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-register">
+          <div class="container-m">
+            <div class="container-bg">
+              <div class="register-row">
+                <div class="register-img-col">
+                  <figure>
+                    <img src="images/register-images/register-img.png" alt="register user image" />
+                  </figure>
+                </div>
+                <div class="register-content-col">
+                  <h3 class="h2">Become a Agent.</h3>
+                  <p>Fusce venenatis tellus a felis scelerisque. venenatis tellus a felis scelerisque.</p>
+                </div>
+                <div class="register-btn-col">
+                  <a href="#reg" class="btn-register">Register Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container-m">
+          <div class="footer-row">
+            <div class="logo-col">
+              <a href="#logo" class="head-foot-link">
+                <div class="footer-logo">
+                  <div class="footer-svg">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M23.715 9.16499L12.465 0.164989C12.332 0.0584866 12.1667 0.000457764 11.9963 0.000457764C11.8258 0.000457764 11.6605 0.0584866 11.5275 0.164989L0.2775 9.16499C0.156135 9.26236 0.0680565 9.39506 0.025468 9.54471C-0.0171205 9.69436 -0.0121105 9.85356 0.0398037 10.0002C0.091718 10.1469 0.187966 10.2738 0.315214 10.3634C0.442461 10.4529 0.594407 10.5006 0.75 10.5H2.25V23.25C2.25 23.4489 2.32902 23.6397 2.46967 23.7803C2.61032 23.921 2.80109 24 3 24H18V22.5H15V15.75C15 15.5511 14.921 15.3603 14.7803 15.2197C14.6397 15.079 14.4489 15 14.25 15H9.75C9.55109 15 9.36032 15.079 9.21967 15.2197C9.07902 15.3603 9 15.5511 9 15.75V22.5H3.75V10.5H16.5V8.99999H2.8875L12 1.70999L21.1125 8.99999H21C20.8011 8.99999 20.6103 9.07901 20.4697 9.21966C20.329 9.36031 20.25 9.55108 20.25 9.74999V14.25H21.75V10.5H23.25C23.405 10.4991 23.5558 10.4502 23.6819 10.3601C23.8079 10.27 23.903 10.143 23.9539 9.9967C24.0049 9.85037 24.0093 9.69184 23.9665 9.54291C23.9237 9.39398 23.8359 9.26195 23.715 9.16499ZM10.5 16.5H13.5V22.5H10.5V16.5Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M18.75 19.9425L17.7825 18.975L16.725 20.0325L18.225 21.5325C18.3655 21.6722 18.5556 21.7506 18.7537 21.7506C18.9519 21.7506 19.142 21.6722 19.2825 21.5325L23.7825 17.0325L22.725 15.975L18.75 19.9425Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                  <strong class="company-name">Rezilla</strong>
+                </div>
+              </a>
+              <address class="com-location">2728 Hickory StreetSalt Lake City, UT 84104</address>
+              <div class="phone-number">
+                <a href="tel:+12062142298" aria-label="Call us at +1 206-214-2298">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span>+1 206-214-2298</span>
+                </a>
+              </div>
+              <div class="email-address" aria-label="email us at given email">
+                <a href="mailto:&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#114;&#101;&#122;&#105;&#108;&#108;&#097;&#046;&#099;&#111;&#109;">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span>&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#064;&#114;&#101;&#122;&#105;&#108;&#108;&#097;&#046;&#099;&#111;&#109;</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="quick-links-col foot-pr-lg-quick">
+              <strong class="foot-heading">Quick Links</strong>
+              <ul class="foot-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Listings</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Become a Agent</a></li>
+              </ul>
+            </div>
+
+            <div class="discovery-col">
+              <strong class="foot-heading">Discovery</strong>
+              <ul class="foot-links">
+                <li><a href="#">Canada</a></li>
+                <li><a href="#">United States</a></li>
+                <li><a href="#">Germany</a></li>
+                <li><a href="#">Africa</a></li>
+                <li><a href="#">India</a></li>
+              </ul>
+            </div>
+            <div class="subscribe-newsletter-col pl-lg-news">
+              <strong class="foot-heading">Subscribe to our Newsletter!</strong>
+              <div class="subscribe-input">
+                <a href="#sbub" class="subscribe-svb-container" aria-label="subscribe button to subscirbe to newsletter">
+                  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                    <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" />
+                  </svg>
+                </a>
+                <input type="email" name="email" placeholder="Email Address" aria-label="subscribe to newsletter" />
+              </div>
+              <strong class="social-media-heading foot-heading">Follow Us on</strong>
+              <ul class="social-media-links">
+                <li>
+                  <a href="#ln" aria-label="link to linked in">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M4.92503 22.0008H0.363799V7.31212H4.92503V22.0008ZM2.64167 5.30848C1.18333 5.30848 0 4.1 0 2.64167C0 1.18333 1.18254 0 2.64167 0C4.10079 0 5.28333 1.18254 5.28333 2.64167C5.28333 4.1 4.1 5.30848 2.64167 5.30848ZM21.9961 22.0008H17.4451V14.8505C17.4451 13.1463 17.4105 10.9611 15.0737 10.9611C12.7023 10.9611 12.3385 12.8123 12.3385 14.728V22.0008H7.78199V7.31212H12.1562V9.31576H12.2199C12.8288 8.1615 14.3162 6.9436 16.5352 6.9436C21.1514 6.9436 22 9.98364 22 13.932V22.0008H21.9961Z"
+                        fill="#3A0CA3"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#fb" aria-label="link to facebook">
+                    <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.0103 12.3743L11.6215 8.393H7.80106V5.80937C7.80106 4.72038 8.33456 3.65819 10.0457 3.65819H11.7824V0.268813C11.7824 0.268813 10.2066 0 8.69963 0C5.55362 0 3.49731 1.90713 3.49731 5.35906V8.39369H0V12.375H3.49731V22H7.80106V12.375L11.0103 12.3743Z"
+                        fill="#3A0CA3"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#in" aria-label="link to instagram">
+                    <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.7823 0C8.79204 0 8.41937 0.0144393 7.24909 0.0639455C6.07401 0.121703 5.27916 0.303913 4.57782 0.576197C3.85448 0.859482 3.23841 1.23559 2.62989 1.84754C2.01725 2.45606 1.63771 3.07213 1.35855 3.79547C1.08626 4.49681 0.904051 5.29166 0.846294 6.46675C0.79335 7.6377 0.782349 8.00969 0.782349 11C0.782349 13.9903 0.796788 14.363 0.846294 15.5333C0.904051 16.7049 1.08626 17.5032 1.35855 18.2045C1.64183 18.9279 2.01794 19.5439 2.62989 20.1525C3.23841 20.7651 3.85448 21.1446 4.57782 21.4238C5.27916 21.6926 6.07745 21.8783 7.24909 21.9361C8.42005 21.989 8.79204 22 11.7823 22C14.7727 22 15.1453 21.9856 16.3156 21.9361C17.4872 21.8783 18.2855 21.692 18.9869 21.4238C19.7102 21.1405 20.3263 20.7644 20.9348 20.1525C21.5474 19.5439 21.927 18.9313 22.2062 18.2045C22.475 17.5032 22.6606 16.7049 22.7184 15.5333C22.7713 14.3623 22.7823 13.9903 22.7823 11C22.7823 8.00969 22.7679 7.63702 22.7184 6.46675C22.6606 5.2951 22.4743 4.49269 22.2062 3.79547C21.9229 3.07213 21.5468 2.45606 20.9348 1.84754C20.3263 1.2349 19.7137 0.855357 18.9869 0.576197C18.2855 0.303913 17.4872 0.121703 16.3156 0.0639455C15.1446 0.0110014 14.7727 0 11.7823 0ZM11.7823 1.98025C14.719 1.98025 15.0697 1.99469 16.2303 2.04419C17.3009 2.09439 17.884 2.27316 18.2711 2.42443C18.7875 2.62452 19.1485 2.86105 19.539 3.24747C19.922 3.63045 20.1585 3.99556 20.3586 4.51194C20.5099 4.89905 20.6886 5.48212 20.7388 6.55269C20.7883 7.71334 20.8028 8.0647 20.8028 11.0007C20.8028 13.9367 20.7883 14.288 20.7347 15.4487C20.677 16.5193 20.4982 17.1023 20.3476 17.4894C20.1393 18.0058 19.9069 18.3668 19.5232 18.7573C19.1361 19.1403 18.7675 19.3769 18.2553 19.5769C17.873 19.7282 17.2817 19.907 16.207 19.9572C15.0401 20.0067 14.6963 20.0211 11.7521 20.0211C8.80785 20.0211 8.46475 20.0067 7.29654 19.9531C6.22597 19.8953 5.63533 19.7165 5.24822 19.5659C4.72565 19.3576 4.36742 19.1252 3.98375 18.7415C3.59664 18.3544 3.35048 17.9859 3.16071 17.4736C3.00669 17.0913 2.83067 16.5 2.7736 15.4253C2.73441 14.2722 2.71584 13.9147 2.71584 10.9842C2.71584 8.05507 2.73441 7.69684 2.7736 6.52932C2.83067 5.45462 3.00669 4.86467 3.16071 4.481C3.35048 3.95774 3.59733 3.6002 3.98375 3.21309C4.36673 2.8301 4.72565 2.58257 5.24822 2.38867C5.63533 2.23809 6.21153 2.05932 7.28622 2.00569C8.45306 1.96375 8.79685 1.94862 11.737 1.94862L11.7823 1.98025ZM11.7823 5.35423C8.66002 5.35423 6.13521 7.88249 6.13521 11.0014C6.13521 14.1237 8.66346 16.6485 11.7823 16.6485C14.9047 16.6485 17.4295 14.1203 17.4295 11.0014C17.4295 7.87905 14.9012 5.35423 11.7823 5.35423ZM11.7823 14.6683C9.75535 14.6683 8.11545 13.0284 8.11545 11.0014C8.11545 8.97437 9.75535 7.33448 11.7823 7.33448C13.8094 7.33448 15.4492 8.97437 15.4492 11.0014C15.4492 13.0284 13.8094 14.6683 11.7823 14.6683ZM18.9772 5.1287C18.9772 5.85961 18.3825 6.44956 17.655 6.44956C16.9241 6.44956 16.3342 5.85892 16.3342 5.1287C16.3342 4.40193 16.9282 3.8106 17.655 3.8106C18.3818 3.8106 18.9772 4.40193 18.9772 5.1287Z"
+                        fill="#3A0CA3"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-banner">
+          <div class="container-m">
+            <div class="foot-banner-items">
+              <p><a href="#">&copy; Rezilla</a><span> - </span>All rights reserved</p>
+              <ul class="foot-banner-links">
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Disclaimer</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

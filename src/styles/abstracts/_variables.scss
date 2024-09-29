@@ -1,0 +1,144 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+
+$breakpoints: (
+  'xs-phone': 320px,
+  'phone': 520px,
+  'tablet': 768px,
+  'desktop': 1024px,
+  'biglaptop': 1200px,
+  'laptop': 1480px,
+  'widescreen': 1920px,
+);
+
+// keywords
+$media-expressions: (
+  'screen': 'screen',
+  'print': 'print',
+  'handheld': 'handheld',
+  'landscape': '(orientation: landscape)',
+  'portrait': '(orientation: portrait)',
+  'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+  'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)',
+);
+
+// Color system
+
+$white: #fff;
+$black: #000;
+
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold: 150;
+
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+$yiq-text-dark: $black;
+$yiq-text-light: $white;
+
+// body
+//
+// settings for the `<body>` element.
+
+$body-bg: $white;
+$body-color: $black;
+
+$link-color: #0366d6;
+$link-decoration: none;
+$link-hover-color: darken(#0366d6, 5%); /* stylelint-disable-line */
+$link-hover-decoration: none;
+
+// border radius
+$rounded-circle: 50%;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif: 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+$font-family-poppins: 'Poppins', sans-serif;
+$font-family-sans-serif-secondary: $font-family-sans-serif;
+$font-family-base: $font-family-sans-serif;
+$base-font-path: '../fonts';
+
+$line-height-base: 1.5;
+
+$font-weight-thin: 100;
+$font-weight-ulight: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-heavy: 800;
+$font-weight-black: 900;
+
+$font-sizes: (
+  'xl': 18px,
+  'lg': 16px,
+  'base': 14px,
+  'md': 12px,
+  'sm': 10px,
+);
+
+$headings-sizes: (
+  'h1': 30px,
+  'h2': 26px,
+  'h3': 22px,
+  'h4': 20px,
+  'h5': 18px,
+  'h6': 16px,
+);
+
+$headings-margin-bottom: 1em;
+$headings-font-weight: inherit;
+$headings-line-height: 1.2;
+
+// Paragraphs
+
+$paragraph-margin-bottom: 1.5em;
+
+// Base transition function
+$transition-duration-base: 0.35s;
+$transition-easing-base: cubic-bezier(0.3, 0.86, 0.36, 0.95);
+
+//variable for layout
+$heading-h1-lg: 57px;
+$h1-line-height-lg: 65px;
+
+$heading-h2-size: 40px;
+$heading-h2-line-hight: 47px;
+
+$heading-h3-size: 27px;
+$heading-h3-line-height: 41px;
+
+$heading-h4-size: 19px;
+
+$paragraph-sm: 13px;
+$paragraph-sm-line-height: 22px;
+
+// default font-size mobile screen
+$paragraph-sm: 13px;
+$paragraph-sm-line-height: 22px;
+
+//defualt font-size web
+$paragraph-size-default: 16px;
+$paragraph-line-heignt-default: 26px;
+
+//color variable
+$primary-color: #3a0ca3;
+$secondary-color: #4361ee;
+$tertiary-color: #4cc9f0;
+$color-purple: #7209b7;
+$color-pink: #f72585;
+$color-white: #fff;
+
+$default-text-color: #0b090a;
+$text-color-2: #2b2b2b;
+$text-color-3: #808080;
+$text-color-4: #aaaaaa;
+$text-color-5: #d4d4d4;
